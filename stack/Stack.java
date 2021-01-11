@@ -7,5 +7,4 @@ public interface Stack {
 
     public int pop();
 
-    public String to_string();
 }

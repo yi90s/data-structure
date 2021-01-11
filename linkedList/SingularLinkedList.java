@@ -50,7 +50,7 @@ public class SingularLinkedList {
 
 
 
-    public void insert_after(int data, int index){
+    public void insertAfter(int data, int index){
         if(index > this.length-1){
             return;
         }
@@ -73,7 +73,7 @@ public class SingularLinkedList {
         this.length++;
     }
 
-    public void delete_at(int index){
+    public void deleteAt(int index){
         if(index > this.length -1){
             return;
         }
@@ -110,8 +110,8 @@ public class SingularLinkedList {
     }
     
     
-    public int index_of(int value){
-        if(this.is_empty()){
+    public int indexOf(int value){
+        if(this.isEmpty()){
             return -1;
         }
         
@@ -136,7 +136,7 @@ public class SingularLinkedList {
     }
 
 
-    public boolean is_empty(){
+    public boolean isEmpty(){
         return this.length == 0;
     }
 

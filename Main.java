@@ -1,5 +1,6 @@
 import linkedList.SingularLinkedList;
 import stack.ArrayStack;
+import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args){
@@ -12,8 +13,8 @@ public class Main {
         list.append(2);
         list.append(3);
         list.append(4);
-        list.insert_after(5, 2);
-        list.insert_after(10,0);
+        list.insertAfter(5, 2);
+        list.insertAfter(10,0);
         System.out.println(list.toString());
         list.reverse();
         System.out.println(list.toString());        
@@ -24,11 +25,11 @@ public class Main {
         st.push(1);
         st.push(5);
         st.push(3);
-        System.out.println(st.to_string());
+        System.out.println(st.toString());
         st.pop();
         st.pop();
         st.pop();
-        System.out.println(st.to_string());
+        System.out.println(st.toString());
     }
 
 

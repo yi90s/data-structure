@@ -11,15 +11,16 @@ public class ArrayStack implements Stack{
 
 
     public void push(int a){
-        if(this.is_full()){
+        if(this.isFull()){
             return; 
         }
 
         this.arr[++top] = a;
     }
+    
 
     public int pop(){
-        if(this.is_empty()){
+        if(this.isEmpty()){
             System.out.println(this+"is empty");
             return -1;
         }
@@ -35,15 +36,17 @@ public class ArrayStack implements Stack{
         return arr[top];
     }
 
-    public boolean is_empty(){
+    public boolean isEmpty(){
         return this.top == -1;
     }
 
-    public boolean is_full(){
+    public boolean isFull(){
         return this.top >= MAX_SIZE-1;
     }
 
-    public String to_string(){
+
+
+    public String toString(){
         String str = "";
         for(int i=0; i<=top; i++){
             str += "("+String.valueOf(arr[i])+")";
